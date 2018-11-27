@@ -1,15 +1,15 @@
-<!DOCTYPE <!DOCTYPE html>
+<!Doctype <!DOCTYPE html>
 <html>
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Historial</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
 
 </head>
 <body>
@@ -26,45 +26,128 @@
         
                     </div>
                 </div>
-            </header><br>
-
-            <nav> aqui va un nav</nav>
-<br>
+            </header>
+            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light" >
+                    <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
         
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Asignatura</th>
-              <th scope="col">Periodo</th>
-              <th scope="col">Nota</th>
-              <th scope="col">Año</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-          </tbody>
-        </table>
-    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto" style="margin: auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Pregrado
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="estudiante.html">Estudiantes</a>
+                                <a class="dropdown-item" href="#">Profesores</a>
+                                <a class="dropdown-item" href="#">Jefe de departamento</a>
+                                <a class="dropdown-item" href="#">Coordinadores de carrera</a>
+                                <a class="dropdown-item" href="#">Programas especiales</a>
+                                <a class="dropdown-item" href="#">Suficiencias</a>
+                                <a class="dropdown-item" href="#">Coordinador de asignatura</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Postgrado
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Solicitud de ingreso</a>
+                                <a class="dropdown-item" href="#">Oferta académica</a>
+                                <a class="dropdown-item" href="#">Servicio al estudiante</a>
+                                <a class="dropdown-item" href="#">Coordinadión de postgrados</a>
+                                <a class="dropdown-item" href="#">Registro de calificacioness</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Administración
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Dirección académica</a>
+                                <a class="dropdown-item" href="#">Comosionado universitario</a>
+                                <a class="dropdown-item" href="#">Tesorería</a>
+                                <a class="dropdown-item" href="#">Decanos</a>
+                                <a class="dropdown-item" href="#">DIPP</a>
+                                <a class="dropdown-item" href="#">SEAPI</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav> <br>
+
+        <section id="tabs">
+                <div class="container">
+                    <div class="xm-col-4">
+                        <h6 class="section-title h2 ">Rendimiento Académico </h6>
+                        <div>  </div>
+                     </div>  
+                    <div class="row">
+                        <div class="col-xs-4 ">
+                            <nav>
+                                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-hitorial-tab" data-toggle="tab" href="#historial" role="tab" aria-controls="nav-home" aria-selected="true">Historial</a>
+                                    <a class="nav-item nav-link" id="nav-seguimiento-tab" data-toggle="tab" href="#seguimiento-calificaciones" role="tab" aria-controls="nav-profile" aria-selected="false">Seguimiento de Calificaciones</a>
+                                    <a class="nav-item nav-link" id="nav-reprobadas-tab" data-toggle="tab" href="#reprobadas-materias" role="tab" aria-controls="nav-contact" aria-selected="false">Materias Reprobadas</a>
+                                    
+                                </div>
+                            </nav>
+                            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent" style="width: 1135px;">
+                                <div class="tab-pane fade show active" id="Historial" role="tabpanel" aria-labelledby="nav-historial-tab">
+                                        <table class="table">
+                                                <thead class="thead-dark">
+                                                  <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Asignatura</th>
+                                                    <th scope="col">Periodo</th>
+                                                    <th scope="col">Nota</th>
+                                                    <th scope="col">Año</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">1</th>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">2</th>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">3</th>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table> 
+                                </div>
+                                <div class="tab-pane fade" id="seguimiento-calificaciones" role="tabpanel" aria-labelledby="nav-seguimiento-tab">
+                                 a   
+                                </div>
+                                <div class="tab-pane fade" id="reprobadas-materias" role="tabpanel" aria-labelledby="nav-reprobadas-tab">
+                                 f   
+                                </div>
+                                
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+   
 </body>
-</html>>
+</html>
