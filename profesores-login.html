@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.4.2/js/all.js" integrity="sha384-wp96dIgDl5BLlOXb4VMinXPNiB32VYBSoXOoiARzSTXY+tsK8yDTYfvdTyqzdGGN"
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -28,8 +30,8 @@
             </div>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light" >
-            <a class="navbar-brand" href="#"></a>
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
+        <div><a class="navbar-brand" href="index.html"><span><i class="fas fa-home"></i></span></a></div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,12 +40,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto" style="margin: auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         Pregrado
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="estudiante-login.html">Estudiantes</a>
                         <a class="dropdown-item" href="#">Profesores</a>
                         <a class="dropdown-item" href="#">Jefe de departamento</a>
                         <a class="dropdown-item" href="#">Coordinadores de carrera</a>
@@ -53,8 +54,8 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         Postgrado
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -66,8 +67,8 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         Administración
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -82,15 +83,33 @@
             </ul>
         </div>
     </nav>
-    <section class="section" style="background-color:springgreen">
-        <article></article>
-    </section>
-    <footer class="footer" style="margin-right: auto; margin-left: auto;">
-        <div style="margin-right: auto; margin-left: auto;">
-            <a href="https://www.unah.edu.hn/?cat=1477&fcats">Dirección Ejecutiva de Gestión de Tecnología (DEGT)</a>
+    <div id="fondo">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="container" id="login">
+                    <h6>Para acceder a los servicios ingresa numero de empleado y clave</h6>
+                    <div class="card card-container">
+                        <img id="profile-img" class="profile-img-card" src="img/profesor.png">
+                        <p id="profile-name" class="profile-name-card"></p>
+                        <form class="form-signin">
+                            <span id="reauth-email" class="reauth-email"></span>
+                            <input class="form-control" type="text" id="no-cuenta" placeholder="No. Cuenta" required
+                                autofocus>
+                            <hr>
+                            <input class="form-control" type="password" id="contraseña" placeholder="Contraseña"
+                                required>
+                            <div id="remember" class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="remember-me">Recuerdame
+                                </label>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Ingresar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
-
+    </div>
 </body>
 
 </html>
