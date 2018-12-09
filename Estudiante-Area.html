@@ -7,14 +7,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/style.css">
+      
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     
 <style >
-.col-md-4{width:100%;height:75px;flex:0 0 32%; background-color:rgba(231,229,229,0.6); margin-top:10px;margin-right:auto;margin-left:auto;
-text-align:center}
 
-.row{margin-right:15px;margin-left:15px; margin-top:10px;}
+section{
+            background-color:rgb(199, 196, 196);
+            color:rgb(24, 24, 24);
+            border-radius: 5px;
+            margin:8px;
+            height: 100px;
+            text-align: center;
+            box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+        }
+        .row{
+            margin: 8px;
+        }
+       
+
 </style>
 </head>
   
@@ -88,17 +100,36 @@ text-align:center}
                         </li>
                     </ul>
                 </div>
-            </nav> <br>
-    <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4"> <section>Matricula</section> </div>
-      <div class="col-md-4"> <section>Historial</section></div>
-      <div class="col-md-4"> <section>Ficha de Estudiante</section></div>
-      <div class="col-md-4"> <section>Evaluacion Docente</section></div>
-      <div class="col-md-4"> <section>Movimientos y Saldos</section></div>
-      </div>  
-    </div>
-         
+            </nav> 
+
+          <hr>
+          <h2 style="text-align: center">Bienvenido Estudiante</h2><hr>
+          <br>
+
+
+                <div class="container-fluid">
+                        <div class="row">
+                            <div id="conten" class="col-xl-4  col-lg-3 col-md-4 col-sm-6 col-12">
+                                <section> Matricula</section>
+                            </div>
+                            <div id="conten" class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-12">
+                                <section>  Ficha de Estudiante  </section>
+                            </div>
+                            <div id="conten" class="col-xl-4  col-lg-3 col-md-4 col-sm-6 col-12">
+                                <section><a href="Historial.html">Historial Academico</a> </section>
+                            </div>
+                            <div id="conten" class="col-xl-4  col-lg-3 col-md-4 col-sm-6 col-12">
+                                <section>  Forma 003 </section>
+                            </div>
+                            <div id="conten" class="col-xl-4  col-lg-3 col-md-4 col-sm-6 col-12">
+                                <section> Evaluacion Docente  </section>
+                            </div>
+                            <div id="conten" class="col-xl-4  col-lg-3 col-md-4 col-sm-6 col-12">
+                                <section>  calificaciones del Periodo  </section>
+                            </div>
+                        </div>
+
+   
     
   </body>
   <footer class="footer" style="margin-right: auto; margin-left: auto;text-align:center; ">
