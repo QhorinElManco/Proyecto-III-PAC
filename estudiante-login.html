@@ -94,8 +94,7 @@
                         <p id="profile-name" class="profile-name-card"></p>
                         <form class="form-signin">
                             <span id="reauth-email" class="reauth-email"></span>
-                            <input class="form-control" type="text" id="no-cuenta" placeholder="No. Cuenta" required
-                                autofocus>
+                            <input class="form-control" type="text" id="Usuario" placeholder="Usuario" required autofocus>
                             <hr>
                             <input class="form-control" type="password" id="contraseña" placeholder="Contraseña"
                                 required>
@@ -104,8 +103,21 @@
                                     <input type="checkbox" value="remember-me">Recuerdame
                                 </label>
                             </div>
-                            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Ingresar</button>
-                        </form>
+                            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" id="btn-login">Ingresar</button>
+                            <script>
+                                $("#btn-login").click(function(){
+                                    $.ajax({
+                                        url:"ajax/login.php",
+                                        data:"&usuario="+$("#Usuario").val() + "&password="+$("#password").val(),
+                                        dataType: JSON,
+                                        method:"POST",
+                                        success:function(respuesta){
+                                            console.log(respuesta);
+                                        }
+                                    })
+                                }
+                            </script>
+                        </form> 
                     </div>
                 </div>
             </div>
