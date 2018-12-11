@@ -92,12 +92,22 @@
                     <div class="card card-container">
                         <img id="profile-img" class="profile-img-card" src="https://image.flaticon.com/icons/png/512/194/194931.png">
                         <p id="profile-name" class="profile-name-card"></p>
+                        <div id="alert"></div>
                         <form class="form-signin">
                             <span id="reauth-email" class="reauth-email"></span>
-                            <input class="form-control" type="text" id="Usuario" placeholder="Usuario" required autofocus>
-                            <hr>
-                            <input class="form-control" type="password" id="contraseña" placeholder="Contraseña"
-                                required>
+                            <input class="form-control" type="text" id="Usuario" placeholder="Usuario" required autofocus><br>
+                            <input class="form-control" type="password" id="contraseña" placeholder="Contraseña"required autofocus><br>
+                            <select class="form-control" id="slc-usuario" required>
+                                <option value="">Tipo de usuario</option>
+                                <option value="1">Estudiante</option>
+                                <option value="2">Docente</option>
+                                <option value="3">Coodinador de asignatura</option>
+                                <option value="4">Coodinador de carrera</option>
+                                <option value="5">Jefe de departamento</option>
+                                <option value="6">Decano</option>
+                            </select>
+                            
+
                             <div id="remember" class="checkbox">
                                 <label>
                                     <input type="checkbox" value="remember-me">Recuerdame
@@ -105,19 +115,9 @@
                             </div>
                             <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" id="btn-login">Ingresar</button>
                             <script>
-                                $("#btn-login").click(function(){
-                                    $.ajax({
-                                        url:"ajax/login.php",
-                                        data:"&usuario="+$("#Usuario").val() + "&password="+$("#password").val(),
-                                        dataType: JSON,
-                                        method:"POST",
-                                        success:function(respuesta){
-                                            console.log(respuesta);
-                                        }
-                                    })
-                                }
+
                             </script>
-                        </form> 
+                        </form>
                     </div>
                 </div>
             </div>
