@@ -1,20 +1,7 @@
-$(document).ready(function () {
-    $("#desplegar").css('display', 'none');
-
-    $("p").mouseenter(function () {
-        $("#desplegar").show('slow');
-    });
-
-    $("p").mouseleave(function () {
-        $("#desplegar").hide('slow');
-
-    });
-});
-
 $("#btn-login").click(function () {
     $.ajax({
         url: "ajax/login.php",
-        data: "&usuario=" + $("#Usuario").val() + "&password=" + $("#password").val(),
+        data: "&usuario=" + $("#Usuario").val() + "&password=" + $("#password").val()+ "&tipoUsuario=" + $("#password").val(),
         dataType: JSON,
         method: "POST",
         success: function (respuesta) {
@@ -33,7 +20,9 @@ $("#btn-login").click(function () {
             }
             else
                 $("#alert").html('<span style="color:red;">Usuario y/o contraseña incorrecta</span>');
-            
-    }
+
+        }
     })
 }
+
+)

@@ -1,3 +1,8 @@
+<?php 
+    session_start();  
+    if (!isset($_SESSION["usuario"]))
+        header("Location: estudiante-login.html");//Redireccion con PHP
+?>
 <!DOCTYPE html>
 <html>
 <head>
