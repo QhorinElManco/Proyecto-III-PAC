@@ -53,6 +53,43 @@
         });
 
     </script>
+    <style>
+    /*pestanas*/
+section {
+    padding: 60px 0;
+    margin:20px 20px;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+section .section-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#tabs{
+	background: white;
+    color: black;
+}
+#tabs h6.section-title{
+    color: black;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: black;
+    background-color: transparent;
+    border-color: transparent transparent black;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: black;
+    font-size: 20px;
+}</style>
     
 
 </head>
@@ -141,9 +178,10 @@
                                     
                                 </div>
                             </nav>
-                            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent" style="width: 1135px;">
+                            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent" style="width: auto">
                                 <div class="tab-pane fade show active" id="Historial" role="tabpanel" aria-labelledby="nav-historial-tab">
-                                        <table class="table">
+                                    <div class="table-responsive-md">    
+                                    <table class="table">
                                                 <thead class="thead-dark">
                                                   <tr>
                                                     <th scope="col">#</th>
@@ -177,6 +215,7 @@
                                                   </tr>
                                                 </tbody>
                                               </table> 
+                                            </div>
                                 </div>
                                 <div class="tab-pane fade" id="seguimiento-calificaciones" role="tabpanel" aria-labelledby="nav-seguimiento-tab">
                                     <div style="width:auto; height:auto">
