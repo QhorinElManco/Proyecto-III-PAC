@@ -11,29 +11,25 @@ $(document).ready(function () {
     });
 });
 
+
 $("#btn-login").click(function () {
     $.ajax({
         url: "ajax/login.php",
-        data: "&usuario=" + $("#Usuario").val() + "&password=" + $("#password").val(),
-        dataType: JSON,
+        data: "cuenta=" + $("#cuenta").val() + "&password=" + $("#password").val() + "&tipoUsuario=" + $("#slc-usuario").val(),
+        dataType: "json",
         method: "POST",
         success: function (respuesta) {
             console.log(respuesta);
             if (respuesta.estatus == 1) {
                 if (respuesta.tipoUsuario == "estudiante")
-                    window.location.href = "estudiante.php";
+                    window.location.href = "estudiante.php";//redireccionar
                 else if (respuesta.tipoUsuario == "docente")
-                    window.location.href = "docente.php";
-                else if (respuesta.tipoUsuario == "docente")
-                    window.location.href = "coordinador-asignatura.php";
-                else if (respuesta.tipoUsuario == "docente")
-                    window.location.href = "coordinador-carrera.php";
-                else if (respuesta.tipoUsuario == "docente")
-                    window.location.href = "jefes-departamento.php";
-            }
-            else
-                $("#alert").html('<span style="color:red;">Usuario y/o contraseña incorrecta</span>');
-            
-    }
-    })
-}
+                    window.location.href = "docente.php";//redireccionar
+            } else
+                $("#alert").html('<span style="color:red;">Cuenta y/o contraseña incorrecta</span><br><span style="color:red;">Asegurese de seleccionar su tipo de usuario</span>');
+        },
+        error: function (error) {
+            console.error(error);
+        }
+    });
+});
