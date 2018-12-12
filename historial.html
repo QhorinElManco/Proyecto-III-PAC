@@ -3,12 +3,56 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Rendimiento Académico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
+     
+    <script type="text/javascript" src="dist/Chart.bundle.min.js"></script>
+
+    <script type="text/javascript"> 
+    $(document).ready(function(){
+        var datos={ 
+            type: "line",
+            data: {
+                
+                pointBorderWidth: 2,
+                datasets:[{
+                    data:[
+                    {x:10, y:20,},
+                    {x:15,y:20,},
+                    {x:25,y:30,},
+                    100
+                    
+                ],
+                    borderColor: [
+                    "#F7464A",
+                    ],
+                    backgroundColor: false,
+                }],
+                labels:[ 
+                    "datos 1",
+                    "datos 2",
+                    "datos 3",
+                    "datos 4",
+                    "datos 5",]
+            },
+                options: {
+                     responsive: true,
+                }
+            
+            };
+
+            var canvas= document.getElementById('Chart').getContext('2d');
+            window.line = new Chart(canvas, datos);
+
+
+
+        });
+
+    </script>
     
 
 </head>
@@ -86,13 +130,12 @@
                 <div class="container">
                     <div class="xm-col-4">
                         <h6 class="section-title h2 ">Rendimiento Académico </h6>
-                        <div>  </div>
                      </div>  
                     <div class="row">
-                        <div class="col-xs-4 ">
+                        <div class="col-12 ">
                             <nav>
                                 <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                                    <a class="nav-item nav-link active" id="nav-hitorial-tab" data-toggle="tab" href="#historial" role="tab" aria-controls="nav-home" aria-selected="true">Historial</a>
+                                    <a class="nav-item nav-link active" id="nav-historial-tab" data-toggle="tab" href="#historial" role="tab" aria-controls="nav-home" aria-selected="true">Historial</a>
                                     <a class="nav-item nav-link" id="nav-seguimiento-tab" data-toggle="tab" href="#seguimiento-calificaciones" role="tab" aria-controls="nav-profile" aria-selected="false">Seguimiento de Calificaciones</a>
                                     <a class="nav-item nav-link" id="nav-reprobadas-tab" data-toggle="tab" href="#reprobadas-materias" role="tab" aria-controls="nav-contact" aria-selected="false">Materias Reprobadas</a>
                                     
@@ -136,7 +179,10 @@
                                               </table> 
                                 </div>
                                 <div class="tab-pane fade" id="seguimiento-calificaciones" role="tabpanel" aria-labelledby="nav-seguimiento-tab">
-                                 a   
+                                    <div style="width:auto; height:auto">
+                                        <canvas id="Chart" width="auto" height="auto"></canvas>
+                                
+                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="reprobadas-materias" role="tabpanel" aria-labelledby="nav-reprobadas-tab">
                                  f   
