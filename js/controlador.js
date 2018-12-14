@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 $("#btn-login").click(function () {
     $.ajax({
-        url: "ajax/login.php",
+        url: "ajax/login-pregrado.php",
         data: "cuenta=" + $("#cuenta").val() + "&password=" + $("#password").val() + "&tipoUsuario=" + $("#slc-usuario").val(),
         dataType: "json",
         method: "POST",

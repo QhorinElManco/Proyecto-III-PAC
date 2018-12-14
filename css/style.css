@@ -4,30 +4,12 @@
     width: 100%;
     height: 140px;
 }
-.navbar-brand{
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-right: 0;
 
-}
-
-.navbar{
-    border: 1px;
-    height: 40px;
-    border-color:  rgb(1, 49, 94);
-}
-
-.dropdown-toggle::after {
-    display:none;
-}
 
 .fas fa-home{
     color: rgb(1, 49, 94);
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    background-color: rgb(1, 49, 94);
-}
 #profile-img{
     height: 150px;
     width: 150px;
@@ -56,7 +38,7 @@
 }
 #fondo{
     width: 100%;
-    height: 100%;
+    height: 1000PX;
     background-image: url('http://diarioroatan.com/wp-content/uploads/2018/04/uNAH-2.jpg');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -65,3 +47,13 @@
     text-align: center;
 }
 
+#fondo-admin{
+    width: 100%;
+    height: 1200px;
+    background-image: url('https://i0.wp.com/ingenieriareal.com/wp-content/uploads/2013/04/UNAH-1.jpg?fit=1500%2C1000&ssl=1');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
