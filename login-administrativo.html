@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.4.2/js/all.js" integrity="sha384-wp96dIgDl5BLlOXb4VMinXPNiB32VYBSoXOoiARzSTXY+tsK8yDTYfvdTyqzdGGN"
         crossorigin="anonymous"></script>
 
@@ -66,18 +65,15 @@
                         <p id="profile-name" class="profile-name-card"></p>
                         <form class="form-signin">
                                 <span id="reauth-email" class="reauth-email"></span>
-                                <input class="form-control" type="text" id="cuenta" placeholder="Usuario" required autofocus><br>
+                                <input class="form-control" type="text" id="idEmpleado" placeholder="ID de empleado" required autofocus><br>
                                 <input class="form-control" type="password" id="password" placeholder="Contraseña"required autofocus><br>
                                 <select class="form-control" id="slc-usuario" required autofocus>
                                     <option value="">Tipo de usuario</option>
-                                    <option value="1">Estudiante</option>
-                                    <option value="2">Docente</option>
-                                    <option value="3">Coodinador de asignatura</option>
-                                    <option value="4">Coodinador de carrera</option>
-                                    <option value="5">Jefe de departamento</option>
+                                    <option value="1">Dirección académica</option>
+                                    <option value="2">DIPP</option>
                                 </select>
                                 <br>
-                                <button class="btn btn-lg btn-primary btn-block btn-signin" type="button" id="btn-login">Ingresar</button>
+                                <button class="btn btn-lg btn-primary btn-block btn-signin" type="button" id="btn-login2">Ingresar</button>
                             </form>
                         </div>
                     </div>
@@ -85,6 +81,12 @@
             </div>
         </div>
     </div>
+    <script>
+
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador2.js"></script>
 </body>
 
 </html>

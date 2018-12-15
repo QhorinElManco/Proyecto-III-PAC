@@ -1,7 +1,7 @@
 <?php
     session_start(); //Tiene que ser la primera funcion.
     if($_POST["tipoUsuario"]==1){
-        $archivo = fopen("../data/usuariosEstudiante.json","r");
+        $archivo = fopen("../data/usuarios/usuariosEstudiante.json","r");
         while(($linea=fgets($archivo))){
             $registro = json_decode($linea,true);
             if (
@@ -21,7 +21,7 @@
         noFound();
     }
     elseif($_POST["tipoUsuario"]==2){
-        $archivo = fopen("../data/usuariosDocente.json","r");
+        $archivo = fopen("../data/usuarios/usuariosDocente.json","r");
         while(($linea=fgets($archivo))){
             $registro = json_decode($linea,true);
             if (
@@ -41,7 +41,7 @@
         noFound();
     }
     elseif($_POST["tipoUsuario"]==3){
-        $archivo = fopen("../data/coordinadorAsignatura.json","r");
+        $archivo = fopen("../data/usuarios/coordinadorAsignatura.json","r");
         while(($linea=fgets($archivo))){
             $registro = json_decode($linea,true);
             if (
@@ -60,7 +60,7 @@
         noFound();
     }
     elseif($_POST["tipoUsuario"]==4){
-        $archivo = fopen("../data/coordinadorCarrera.json.json","r");
+        $archivo = fopen("../data/usuarios/coordinadorCarrera.json.json","r");
         while(($linea=fgets($archivo))){
             $registro = json_decode($linea,true);
             if (
@@ -79,7 +79,7 @@
         noFound();
     }
     elseif($_POST["tipoUsuario"]==5){
-        $archivo = fopen("../data/jefeDepartamento.json","r");
+        $archivo = fopen("../data/usuarios/jefeDepartamento.json","r");
         while(($linea=fgets($archivo))){
             $registro = json_decode($linea,true);
             if (
