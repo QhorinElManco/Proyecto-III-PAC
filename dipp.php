@@ -57,7 +57,7 @@
                         <a class="nav-link" href="matricula-laboratorios.php">Registro de estudiantes</a>
                     </li>
                 </ul>-->
-                <ul class="nav nav-tabs" style="margin.left:auto; margin-right:auto;">
+                <ul class="navbar-nav mr-auto nav nav-tabs">
                     <li class="active"><a data-toggle="tab" href="#menu1">Registro de estudiantes</a></li>
                     <li><a data-toggle="tab" href="#menu2">Registro de personal docente</a></li>
                     <li><a data-toggle="tab" href="#menu3">Registro de personal administrativo</a></li>

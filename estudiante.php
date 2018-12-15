@@ -16,24 +16,6 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="css/fontawesome/js/all.min.js"></script>
-
-    <!--<style>
-
-        section{
-            background-color:rgb(199, 196, 196);
-            color:rgb(24, 24, 24);
-            border-radius: 5px;
-            margin:8px;
-            height: 100px;
-            text-align: center;
-            box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
-        }
-        .row{
-            margin: 8px;
-        }
-       
-
-</style>-->
 </head>
 
 <body>
@@ -94,7 +76,7 @@
         <div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
-                    <li class="nav-item"><a class="navbar-brand" href="index.html">Cerrar sesión<span style="margin-left: 5px; "><i
+                    <li class="nav-item"><a class="navbar-brand" href="login-pregrado.html">Cerrar sesión<span style="margin-left: 5px; "><i
                                     class="fas fa-sign-out-alt" style="font-size:27px; margin-bottom:-4px;"></i></span></a>
                     </li>
                 </ul>

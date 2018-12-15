@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Area Estudiante</title>
+    <title>Docente</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
@@ -40,7 +40,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="#"></a>
-        <div style="margin-left:auto;"><a class="navbar-brand" href="profesores-login.html"><span>Cerrar Sesión <i class="fas fa-sign-out-alt"></i></span></a></div>
+        <div style="margin-left:auto;"><a class="navbar-brand" href="login-pregrado.html"><span>Cerrar Sesión <i class="fas fa-sign-out-alt"></i></span></a></div>
     </nav> <br>
     <div class="container-fluid">
         <div></div>
