@@ -78,9 +78,30 @@
     <div class="container">
         <div class="tab-content">
             <div id="menu1" class="tab-pane fade in active">
-                <h3>Menu 1</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+                <h3>Registro de estudiantes</h3>
+                <p>Por favor asegurese de llenar todos los campos.</p>
+                <div class="container">
+                    <form>
+                    <input class="form-control" type="text" id="nombreCompleto" placeholder="Nombre completo" required autofocus><br>
+                    <input class="form-control" type="text" id="carrera" placeholder="Carrera" required autofocus><br>
+                    <input class="form-control" type="text" id="urlImagen" placeholder="Ingrese la url de la foto de perfil" required autofocus><br>
+                    <input class="form-control" type="text" id="dirección" placeholder="Dirección completa donde reside" required autofocus><br>
+                    <input class="form-control" type="text" id="centro" placeholder="Centro donde estudiará" required autofocus><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </form>
+                </div>
             </div>
             <div id="menu2" class="tab-pane fade in fade">
                 <h3>Menu 2</h3>
