@@ -9,11 +9,126 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+   
     <style>
-    .modal-dialog{max-width: 1000px !important;}
-    </style>
+        .modal-dialog{max-width: 1000px !important;}
+	
+
+	.selected{
+		cursor: pointer;
+	}
+	.selected:hover{
+		background-color: #0585C0;
+		color: white;
+	}
+	.seleccionada{
+		background-color: #0585C0;
+		color: white;
+	}
+</style>
+
+<script>
+	$(document).ready(function(){
+		
+		$('#bt_del').click(function(){
+			eliminar(id_fila_selected);
+		});
+		
+		
+
+	});
+	var cont=0;
+	var id_fila_selected=[];
+
+	function seleccionar(id_fila){
+		if($('#'+id_fila).hasClass('seleccionada')){
+			$('#'+id_fila).removeClass('seleccionada');
+		}
+		else{
+			$('#'+id_fila).addClass('seleccionada');
+		}
+		
+		id_fila_selected.push(id_fila);
+	}
+
+	function eliminar(id_fila){
+		
+		for(var i=0; i<id_fila.length; i++){
+			$('#'+id_fila[i]).remove();
+		}
+		
+	}
+
+	
+	
+
+
+</script>
 </head>
 <body>
+<header class="header">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="logo">
+                    <a class href="index.html">
+                        <img class="img-responsive" src="img/logo-unah-blanco.png" alt="Universidad Nacional Autonoma de Honduras">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+            </div>
+        </div>
+    </header>
+
+     <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Forma 003<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.php">Matricula</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula-laboratorios.php">Matricula de laboratorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evaluacion-docente.php">Evaluacion al docente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calificaciones-periodo.php">Calificaciones del periodo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Más</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Solicitudes</a>
+                            <a class="dropdown-item" href="#">Cambio de clave</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Censo de matricula</a>
+                            <a class="dropdown-item" href="#">Ver programación académica</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
+                    <li class="nav-item"><a class="navbar-brand" href="login-pregrado.html">Cerrar sesión<span style="margin-left: 5px; "><i
+                                    class="fas fa-sign-out-alt" style="font-size:27px; margin-bottom:-4px;"></i></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <section style="box-shadow: none;">
             <div class="row" style="margin:auto">
@@ -62,7 +177,7 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr style="border-top-color: solid white; border-bottom:solid white">
-                                                        <th scope="row">1</th>
+                                                        <th scope="row"></th>
                                                         <td>Mark</td>
                                                         <td>Otto</td>
                                                     
@@ -139,8 +254,126 @@
                                 </div>
 
                         </div>
-                        <div class="tab-pane fade" id="cancelarClase" role="tabpanel" aria-labelledby="cancelar-Clase">j</div>
-                        <div class="tab-pane fade" id="claseEnEspera" role="tabpanel" aria-labelledby="clase-En-Espera">.mj</div>
+                        <div class="tab-pane fade" id="cancelarClase" role="tabpanel" aria-labelledby="cancelar-Clase">
+                        <div style="background-color: #007bff; color: white; text-align: center">Cancela tu clase</div><br>
+                        <div class="table-responsive-lg">
+                            <table class="table table-bordered">
+                                    <thead style="background-color: #007bff; color: white">
+                                    <tr>
+                                        <th scope="col">Cod.</th>
+                                        <th scope="col">Asigantura</th>
+                                        <th scope="col">Seccion</th>
+                                        <th scope="col">HI</th>
+                                        <th scope="col">HF</th>
+                                        <th scope="col">Dias</th>
+                                        <th scope="col">Edificio</th>
+                                        <th scope="col">Aula</th>
+                                        <th scope="col">UV</th>
+                                        <th scope="col">Periodo</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="selected" id="fila" onclick="seleccionar(this.id)">
+                                        <th scope="row">MM-110</th>
+                                        <td>Matemática I</td>
+                                        <td>0900</td>
+                                        <td>0800</td>
+                                        <td>0900</td>
+                                        <td>Lu-Vi</td>
+                                        <td>F1</td>
+                                        <td>302</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                    </tr>
+                                
+
+                                     <tr class="selected" id="fila1" onclick="seleccionar(this.id)">
+                                            <th scope="row">MM-111</th>
+                                            <td>Geometria y Trigonometría</td>
+                                            <td>1001</td>
+                                            <td>1000</td>
+                                            <td>1100</td>
+                                            <td>Lu-Vi</td>
+                                            <td>F1</td>
+                                            <td>305</td>
+                                            <td>5</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr class="selected" id="fila2" onclick="seleccionar(this.id)">
+                                            <th scope="row">MM-111</th>
+                                            <td>Geometria y Trigonometría</td>
+                                            <td>1001</td>
+                                            <td>1000</td>
+                                            <td>1100</td>
+                                            <td>Lu-Vi</td>
+                                            <td>F1</td>
+                                            <td>305</td>
+                                            <td>5</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr class="selected" id="fila3" onclick="seleccionar(this.id)">
+                                            <th scope="row">MM-111</th>
+                                            <td>Geometria y Trigonometría</td>
+                                            <td>1001</td>
+                                            <td>1000</td>
+                                            <td>1100</td>
+                                            <td>Lu-Vi</td>
+                                            <td>F1</td>
+                                            <td>305</td>
+                                            <td>5</td>
+                                            <td>3</td>
+                                        </tr>
+                                        
+                                    
+                                    </tbody>
+                                </table>
+                                </div>
+                                <button id="bt_del" class="btn btn-default">Eliminar</button>
+
+                            
+                        </div>
+                        <div class="tab-pane fade" id="claseEnEspera" role="tabpanel" aria-labelledby="clase-En-Espera">
+                        <div style="background-color: #007bff; color: white; text-align: center">Clases en Espera</div><br>
+                            <div class="table-responsive-lg">
+                            <table class="table table-bordered">
+                                    <thead style="background-color: #007bff; color: white">
+                                    <tr>
+                                        <th scope="col">Cod.</th>
+                                        <th scope="col">Asigantura</th>
+                                        <th scope="col">Seccion</th>
+                                        <th scope="col">HI</th>
+                                        <th scope="col">HF</th>
+                                        <th scope="col">Edificio</th>
+                                        <th scope="col">Aula</th>
+                                        <th scope="col">UV</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">MM-110</th>
+                                        <td>Matemática I</td>
+                                        <td>0900</td>
+                                        <td>0800</td>
+                                        <td>0900</td>
+                                        <td>F1</td>
+                                        <td>302</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                            <th scope="row">MM-111</th>
+                                            <td>Geometria y Trigonometría</td>
+                                            <td>1001</td>
+                                            <td>1000</td>
+                                            <td>1100</td>
+                                            <td>F1</td>
+                                            <td>305</td>
+                                            <td>5</td>
+                                        </tr>
+                                    
+                                    </tbody>
+                                </table>
+                                </div>
+                        </div>
                         <div class="tab-pane fade" id="forma003" role="tabpanel" aria-labelledby="forma-003">
                             <div class="row" >
                                 <div  class="col-md-9" >
