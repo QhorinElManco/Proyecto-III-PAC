@@ -77,7 +77,7 @@
                             <option value="">Seleccione una carrera</option>
                         </select><br>
                         <input class="form-control" type="number" id="numeroCuenta" placeholder="Ingrese numero de cuenta" required autofocus><br>
-                        <input class="form-control" type="text" id="contraseña" placeholder="Ingrese una contraseña" required autofocus><br>
+                        <input class="form-control" type="password" id="contraseña" placeholder="Ingrese una contraseña" required autofocus><br>
                         <button class="btn btn-lg btn-primary btn-block btn-signin" type="button" id="registra">Registrar</button>
                     </form>
     </div>

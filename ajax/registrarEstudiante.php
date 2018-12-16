@@ -1,7 +1,4 @@
 <?php
-    switch($_GET["accion"]){
-        case 1:
-            //Guardar tarjeta en el archivo correspondiente:
             $archivo = fopen("../data/usuarios/usuariosEstudiante.json","a+");
             $registro = array();
             $registro["nombreCompleto"] = $_POST["nombreCompleto"];
@@ -11,10 +8,8 @@
             $registro["carrera"] = $_POST["carrera"];
             $registro["numeroCuenta"] = $_POST["numeroCuenta"];
             $registro["contraseña"] = $_POST["contraseña"];
-            $registro["estado"] = "activo"
+            $registro["estado"] = "activo";
             fwrite($archivo, json_encode($registro)."\n");
             echo json_encode($registro);
             fclose($archivo);
-        break;
-    }
 ?>

@@ -26,7 +26,7 @@ $(document).ready(function(){
                         +"contraseña="+$("#contraseña").val();
         console.log(parametros);
         $.ajax({
-            url:"ajax/registrarEstudiante.php?opcion=1", //este caso será guardar estudiante
+            url:"ajax/registrarEstudiante.php", //este caso será guardar estudiante
             method:"POST",
             dataType:"json",
             data:parametros,
