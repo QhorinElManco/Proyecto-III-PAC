@@ -82,14 +82,38 @@
                 <p>Por favor asegurese de llenar todos los campos.</p>
                 <div class="container">
                     <form>
-                    <input class="form-control" type="text" id="nombreCompleto" placeholder="Nombre completo" required autofocus><br>
-                    <input class="form-control" type="text" id="carrera" placeholder="Carrera" required autofocus><br>
-                    <input class="form-control" type="text" id="urlImagen" placeholder="Ingrese la url de la foto de perfil" required autofocus><br>
-                    <input class="form-control" type="text" id="dirección" placeholder="Dirección completa donde reside" required autofocus><br>
-                    <input class="form-control" type="text" id="centro" placeholder="Centro donde estudiará" required autofocus><br>
-
-
-
+                        <input class="form-control" type="text" id="nombreCompleto" placeholder="Nombre completo" required autofocus><br>
+                        <input class="form-control" type="text" id="carrera" placeholder="Carrera" required autofocus><br>
+                        <input class="form-control" type="text" id="urlImagen" placeholder="Ingrese la url de la foto de perfil" required autofocus><br>
+                        <input class="form-control" type="text" id="dirección" placeholder="Dirección completa donde reside" required autofocus><br>
+                        <select class="form-control" id="centro" required autofocus>
+                            <option value="">Seleccione el centro</option>
+                            <option value="1">Ciudad Universitaria - CU</option>
+                            <option value="2">Universidad Nacional Autónoma de Honduras del Valle de Sula - UNAH-VS</option>
+                            <option value="3">Centro Universitario Regional del Litoral Atlántico - CURLA</option>
+                            <option value="4">Centro Universitario Regional del Valle de Aguan - CURVA</option>
+                            <option value="5">Centro Universitario Regional del Litoral Pacífico - CURLP</option>
+                            <option value="6">Centros Asociados del Sistema de Educación a Distancia - CASUED</option>
+                            <option value="7">Centro Universitario Regional Nororiental - CURNO</option>
+                            <option value="8">Centro Universitario Regional de Occidente - CUROC</option>
+                            <option value="9">Centro Universitario de la Zona Oriental - UNAH Tec Danlí</option>
+                            <option value="10">Centro Tecnológico del Valle de Aguán - UNAH-TEC Aguán</option>
+                            <option value="11">Instituto Tecnológico Superior de Tela - ITST</option>
+                        </select>
+                        <select class="form-control" id="centro" required autofocus>
+                            <option value="">Seleccione el centro</option>
+                            <option value="1">Ciudad Universitaria - CU</option>
+                            <option value="2">Universidad Nacional Autónoma de Honduras del Valle de Sula - UNAH-VS</option>
+                            <option value="3">Centro Universitario Regional del Litoral Atlántico - CURLA</option>
+                            <option value="4">Centro Universitario Regional del Valle de Aguan - CURVA</option>
+                            <option value="5">Centro Universitario Regional del Litoral Pacífico - CURLP</option>
+                            <option value="6">Centros Asociados del Sistema de Educación a Distancia - CASUED</option>
+                            <option value="7">Centro Universitario Regional Nororiental - CURNO</option>
+                            <option value="8">Centro Universitario Regional de Occidente - CUROC</option>
+                            <option value="9">Centro Universitario de la Zona Oriental - UNAH Tec Danlí</option>
+                            <option value="10">Centro Tecnológico del Valle de Aguán - UNAH-TEC Aguán</option>
+                            <option value="11">Instituto Tecnológico Superior de Tela - ITST</option>
+                        </select>
 
 
 

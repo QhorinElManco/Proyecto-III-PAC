@@ -41,7 +41,7 @@ $("#btn-login").click(function () {
 });
 
     //Funcion click en el boton ingresar de login administrativo
-        $("#btn-login2").click(function () {
+        $("#btn-login").click(function () {
         $.ajax({
             url: "ajax/login-administrativo.php",
             data: "id=" + $("#idEmpleado").val() + "&password=" + $("#password").val() + "&tipoUsuario=" + $("#slc-usuario").val(),
