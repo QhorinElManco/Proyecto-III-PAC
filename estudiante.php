@@ -1,7 +1,9 @@
-<?php 
-    session_start();  
-    if (!isset($_SESSION["usuario"]))
-        header("Location: login-pregrado.html");//Redireccion con PHP
+<?php
+  include("validar-sesion.php");  
+?>
+
+<?php
+  include("validar-sesion.php");  
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,7 +47,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Forma 003<span class="sr-only"></span></a>
+                        <a class="nav-link" href="#">Información<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="matricula.php">Matricula</a>
@@ -76,7 +78,7 @@
         <div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
-                    <li class="nav-item"><a class="navbar-brand" href="login-pregrado.html">Cerrar sesión<span style="margin-left: 5px; "><i
+                    <li class="nav-item"><a class="navbar-brand" href="login-pregrado.php">Cerrar sesión<span style="margin-left: 5px; "><i
                                     class="fas fa-sign-out-alt" style="font-size:27px; margin-bottom:-4px;"></i></span></a>
                     </li>
                 </ul>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -16,20 +17,9 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="logo">
-                    <a class href="index.html">
-                        <img class="img-responsive" src="img/logo-unah-blanco.png" alt="Universidad Nacional Autonoma de Honduras">
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-            </div>
-        </div>
-    </header>   
+  <?php
+  include("header.php");
+  ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" 
@@ -44,13 +34,13 @@
                   <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="login-pregrado.html">Pregrado</a>
+                  <a class="nav-link" href="login-pregrado.php">Pregrado</a>
                 </li>
                 <li class="nav-item">
                         <a class="nav-link" href="#">Postgrado</a>
                       </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="login-administrativo.html">Administrativo</a>
+                  <a class="nav-link" href="login-administrativo.php">Administrativo</a>
                 </li>
               </ul>
             </div>
