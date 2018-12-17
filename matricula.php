@@ -1,3 +1,6 @@
+<?php
+  include("validar-sesion.php");  
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -90,10 +93,10 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Forma 003<span class="sr-only"></span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="matricula.php">Matricula</a>
                     </li>
                     <li class="nav-item">

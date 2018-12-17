@@ -1,7 +1,5 @@
-<?php 
-    session_start();  
-    if (!isset($_SESSION["usuario"]))
-        header("Location: login-pregrado.html");//Redireccion con PHP
+<?php
+  include("validar-sesion.php");  
 ?>
 
 <!DOCTYPE html>

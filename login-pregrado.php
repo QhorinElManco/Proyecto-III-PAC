@@ -40,13 +40,13 @@
                           <a class="nav-link" href="index.html">Inicio <span class="sr-only"></span></a>
                         </li>
                         <li class="nav-item active">
-                          <a class="nav-link" href="login-pregrado.html">Pregrado</a>
+                          <a class="nav-link" href="login-pregrado.php">Pregrado</a>
                         </li>
                         <li class="nav-item">
                                 <a class="nav-link" href="#">Postgrado</a>
                               </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="login-administrativo.html">Administrativo</a>
+                          <a class="nav-link" href="login-administrativo.php">Administrativo</a>
                         </li>
                       </ul>
                     </div>

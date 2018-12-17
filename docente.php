@@ -1,3 +1,7 @@
+<?php
+  include("validar-sesion.php");  
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -40,7 +44,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="#"></a>
-        <div style="margin-left:auto;"><a class="navbar-brand" href="login-pregrado.html"><span>Cerrar Sesión <i class="fas fa-sign-out-alt"></i></span></a></div>
+        <div style="margin-left:auto;"><a class="navbar-brand" href="login-pregrado.php"><span>Cerrar Sesión <i class="fas fa-sign-out-alt"></i></span></a></div>
     </nav> <br>
     <div class="container-fluid">
         <div></div>
