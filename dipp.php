@@ -1,3 +1,6 @@
+<?php
+    include("validar-sesion.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,7 +48,7 @@
         <div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
-                    <li class="nav-item"><a class="navbar-brand" href="login-pregrado.php">Cerrar sesión<span style="margin-left: 5px; "><i
+                    <li class="nav-item"><a class="navbar-brand" href="cerrar-sesion.php">Cerrar sesión<span style="margin-left: 5px; "><i
                                     class="fas fa-sign-out-alt" style="font-size:27px; margin-bottom:-4px;"></i></span></a>
                     </li>
                 </ul>
@@ -54,32 +57,31 @@
     </nav>
     <div class="container">
                     <form>
-                        <div class="component-header" id="image-profile">
-                        </div>
                         <input class="form-control" type="text" id="nombreCompleto" placeholder="Nombre completo" required autofocus><br>
-                        <input class="form-control" type="text" id="urlImagen" placeholder="Ingrese la url de la foto de perfil" required autofocus><br>
-                        <input class="form-control" type="text" id="dirección" placeholder="Dirección completa donde reside" required autofocus><br>
+                        <input class="form-control" type="text" id="direccion" placeholder="Dirección completa donde reside" required autofocus><br>
                         <select class="form-control" id="centro" required autofocus>
                             <option value="">Seleccione el centro</option>
-                            <option value="1">Ciudad Universitaria - CU</option>
-                            <option value="2">Universidad Nacional Autónoma de Honduras del Valle de Sula - UNAH-VS</option>
-                            <option value="3">Centro Universitario Regional del Litoral Atlántico - CURLA</option>
-                            <option value="4">Centro Universitario Regional del Valle de Aguan - CURVA</option>
-                            <option value="5">Centro Universitario Regional del Litoral Pacífico - CURLP</option>
-                            <option value="6">Centros Asociados del Sistema de Educación a Distancia - CASUED</option>
-                            <option value="7">Centro Universitario Regional Nororiental - CURNO</option>
-                            <option value="8">Centro Universitario Regional de Occidente - CUROC</option>
-                            <option value="9">Centro Universitario de la Zona Oriental - UNAH Tec Danlí</option>
-                            <option value="10">Centro Tecnológico del Valle de Aguán - UNAH-TEC Aguán</option>
-                            <option value="11">Instituto Tecnológico Superior de Tela - ITST</option>
+                            <option value="CU">Ciudad Universitaria - CU</option>
+                            <option value="UNAH-VS">Universidad Nacional Autónoma de Honduras del Valle de Sula - UNAH-VS</option>
+                            <option value="CURLA">Centro Universitario Regional del Litoral Atlántico - CURLA</option>
+                            <option value="CURVA">Centro Universitario Regional del Valle de Aguan - CURVA</option>
+                            <option value="CURLP">Centro Universitario Regional del Litoral Pacífico - CURLP</option>
+                            <option value="CASUED">Centros Asociados del Sistema de Educación a Distancia - CASUED</option>
+                            <option value="CURNO">Centro Universitario Regional Nororiental - CURNO</option>
+                            <option value="CUROC">Centro Universitario Regional de Occidente - CUROC</option>
+                            <option value="UNAH Tec Danlí">Centro Universitario de la Zona Oriental - UNAH Tec Danlí</option>
+                            <option value="UNAH-TEC Aguán">Centro Tecnológico del Valle de Aguán - UNAH-TEC Aguán</option>
+                            <option value="ITST">Instituto Tecnológico Superior de Tela - ITST</option>
                         </select><br>
                         <select class="form-control" id="slc-carrera" required autofocus>
                             <option value="">Seleccione una carrera</option>
                         </select><br>
                         <input class="form-control" type="number" id="numeroCuenta" placeholder="Ingrese numero de cuenta" required autofocus><br>
-                        <input class="form-control" type="password" id="contraseña" placeholder="Ingrese una contraseña" required autofocus><br>
+                        <input class="form-control" type="password" id="password" placeholder="Ingrese una contraseña" required autofocus><br>
+                        <input class="form-control" type="text" id="urlImagen" placeholder="Ingrese la url de la foto de perfil" required autofocus><br>
                         <button class="btn btn-lg btn-primary btn-block btn-signin" type="button" id="registra">Registrar</button>
-                    </form>
+                        
+                        
     </div>
 
     <!--<hr>

@@ -87,7 +87,7 @@
             </nav>
             <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
                 <a class="navbar-brand" href="#"></a>
-                <div style="margin-left:auto;"><a class="navbar-brand" href="profesores-login.html"><span>Cerrar Sesión <i class="fas fa-sign-out-alt"></i></span></a></div>
+                <div style="margin-left:auto;"><a class="navbar-brand" href="cerrar-sesion.php"><span>Cerrar Sesión <i class="fas fa-sign-out-alt"></i></span></a></div>
             </nav> <br>
 
     <section>

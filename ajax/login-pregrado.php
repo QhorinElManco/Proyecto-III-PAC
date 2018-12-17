@@ -5,14 +5,15 @@
         while(($linea=fgets($archivo))){
             $registro = json_decode($linea,true);
             if (
-                $_POST["cuenta"]==$registro["cuenta"] && 
+                $_POST["cuenta"]==$registro["numeroCuenta"] && 
                 $_POST["password"]==$registro["password"]
             ){
+                $registro["tipoUsuario"]="estudiante";
                 $registro["estatus"] = "1"; //Acceso exitoso
                 $registro["mensaje"] = "Acceso autorizado";
                 $_SESSION["cuenta"] = $_POST["cuenta"];
                 $_SESSION["tipoUsuario"] = $registro["tipoUsuario"];
-                $_SESSION["nombre"] = $registro["nombre"];
+                $_SESSION["nombre"] = $registro["nombreCompleto"];
 
                 echo json_encode($registro);
                 exit;
@@ -28,11 +29,12 @@
                 $_POST["cuenta"]==$registro["cuenta"] && 
                 $_POST["password"]==$registro["password"]
             ){
+                $registro["tipoUsuario"]="docente";
                 $registro["estatus"] = "1"; //Acceso exitoso
                 $registro["mensaje"] = "Acceso autorizado";
                 $_SESSION["cuenta"] = $_POST["cuenta"];
                 $_SESSION["tipoUsuario"] = $registro["tipoUsuario"];
-                $_SESSION["nombre"] = $registro["nombre"];
+                $_SESSION["nombre"] = $registro["nombreCompleto"];
 
                 echo json_encode($registro);
                 exit;
@@ -48,11 +50,12 @@
                 $_POST["cuenta"]==$registro["cuenta"] && 
                 $_POST["password"]==$registro["password"]
             ){
+                $registro["tipoUsuario"]="estudiante";
                 $registro["estatus"] = "1"; //Acceso exitoso
                 $registro["mensaje"] = "Acceso autorizado";
                 $_SESSION["cuenta"] = $_POST["cuenta"];
                 $_SESSION["tipoUsuario"] = $registro["tipoUsuario"];
-                $_SESSION["nombre"] = $registro["nombre"];
+                $_SESSION["nombre"] = $registro["nombreCompleto"];
                 echo json_encode($registro);
                 exit;
             }
@@ -71,7 +74,7 @@
                 $registro["mensaje"] = "Acceso autorizado";
                 $_SESSION["cuenta"] = $_POST["cuenta"];
                 $_SESSION["tipoUsuario"] = $registro["tipoUsuario"];
-                $_SESSION["nombre"] = $registro["nombre"];
+                $_SESSION["nombre"] = $registro["nombreCompleto"];
                 echo json_encode($registro);
                 exit;
             }
@@ -90,7 +93,7 @@
                 $registro["mensaje"] = "Acceso autorizado";
                 $_SESSION["cuenta"] = $_POST["cuenta"];
                 $_SESSION["tipoUsuario"] = $registro["tipoUsuario"];
-                $_SESSION["nombre"] = $registro["nombre"];
+                $_SESSION["nombre"] = $registro["nombreCompleto"];
                 echo json_encode($registro);
                 exit;
             }

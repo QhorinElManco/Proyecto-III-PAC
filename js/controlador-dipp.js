@@ -7,7 +7,6 @@ $(document).ready(function(){
 		dataType:"json",
 		success:function(respuesta){
 			console.log(respuesta);
-			$("#slc-usuario").append(`<option value=""></option>`);
 			for(var i=0; i<respuesta.length;i++)
 				$("#slc-carrera").append(`<option value="${respuesta[i].carrera}">${respuesta[i].carrera}</option>`);
 		},
@@ -19,11 +18,11 @@ $(document).ready(function(){
     $("#registra").click(function(){
         var parametros="nombreCompleto="+$("#nombreCompleto").val()+"&"
                         +"urlImagen="+$("#urlImagen").val()+"&"
-                        +"dirección="+$("#dirección").val()+"&"
+                        +"direccion="+$("#direccion").val()+"&"
                         +"centro="+$("#centro").val()+"&"
                         +"carrera="+$("#slc-carrera").val()+"&"
                         +"numeroCuenta="+$("#numeroCuenta").val()+"&"
-                        +"contraseña="+$("#contraseña").val();
+                        +"password="+$("#password").val();
         console.log(parametros);
         $.ajax({
             url:"ajax/registrarEstudiante.php", //este caso será guardar estudiante
@@ -33,7 +32,7 @@ $(document).ready(function(){
             success:function(respuesta){
                 console.log(respuesta);
                 $("#imagen-profile").html(
-                    `<img src = "img/profile-pics/pajarito.png" class="img-fluid rounded-circle img-thumbnail">`
+                    `<img src = "${respuesta.urlImagen}" class="img-fluid rounded-circle img-thumbnail">`
                     );
             },
             error:function(error){

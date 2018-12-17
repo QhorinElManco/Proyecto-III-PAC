@@ -19,73 +19,56 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="logo">
-                    <a class href="index.html">
-                        <img class="img-responsive" src="img/logo-unah-blanco.png" alt="Universidad Nacional Autonoma de Honduras">
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<?php
+    include("header.php")
+?>
 
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Información<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.php">Matricula</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula-laboratorios.php">Matricula de laboratorios</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="evaluacion-docente.php">Evaluacion al docente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calificaciones-periodo.php">Calificaciones del periodo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Más</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Solicitudes</a>
+                            <a class="dropdown-item" href="#">Cambio de clave</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Censo de matricula</a>
+                            <a class="dropdown-item" href="#">Ver programación académica</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
-
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto" style="margin: auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Pregrado
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="estudiante.html">Estudiantes</a>
-                        <a class="dropdown-item" href="#">Profesores</a>
-                        <a class="dropdown-item" href="#">Jefe de departamento</a>
-                        <a class="dropdown-item" href="#">Coordinadores de carrera</a>
-                        <a class="dropdown-item" href="#">Programas especiales</a>
-                        <a class="dropdown-item" href="#">Suficiencias</a>
-                        <a class="dropdown-item" href="#">Coordinador de asignatura</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Postgrado
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Solicitud de ingreso</a>
-                        <a class="dropdown-item" href="#">Oferta académica</a>
-                        <a class="dropdown-item" href="#">Servicio al estudiante</a>
-                        <a class="dropdown-item" href="#">Coordinadión de postgrados</a>
-                        <a class="dropdown-item" href="#">Registro de calificacioness</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Administración
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Dirección académica</a>
-                        <a class="dropdown-item" href="#">Comosionado universitario</a>
-                        <a class="dropdown-item" href="#">Tesorería</a>
-                        <a class="dropdown-item" href="#">Decanos</a>
-                        <a class="dropdown-item" href="#">DIPP</a>
-                        <a class="dropdown-item" href="#">SEAPI</a>
-                    </div>
-                </li>
-            </ul>
+        <div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
+                    <li class="nav-item"><a class="navbar-brand" href="cerrar-sesion.php">Cerrar sesión<span style="margin-left: 5px; "><i
+                                    class="fas fa-sign-out-alt" style="font-size:27px; margin-bottom:-4px;"></i></span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="container">
