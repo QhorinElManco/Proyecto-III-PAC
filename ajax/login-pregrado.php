@@ -14,7 +14,7 @@
                 $_SESSION["cuenta"] = $_POST["cuenta"];
                 $_SESSION["tipoUsuario"] = $registro["tipoUsuario"];
                 $_SESSION["nombre"] = $registro["nombreCompleto"];
-
+                $_SESSION["carrera"] = $registro["carrera"];
                 echo json_encode($registro);
                 exit;
             }

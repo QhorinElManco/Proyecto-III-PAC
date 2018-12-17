@@ -30,59 +30,12 @@
 	}
 </style>
 
-<script>
-	$(document).ready(function(){
-		
-		$('#bt_del').click(function(){
-			eliminar(id_fila_selected);
-		});
-		
-		
 
-	});
-	var cont=0;
-	var id_fila_selected=[];
-
-	function seleccionar(id_fila){
-		if($('#'+id_fila).hasClass('seleccionada')){
-			$('#'+id_fila).removeClass('seleccionada');
-		}
-		else{
-			$('#'+id_fila).addClass('seleccionada');
-		}
-		
-		id_fila_selected.push(id_fila);
-	}
-
-	function eliminar(id_fila){
-		
-		for(var i=0; i<id_fila.length; i++){
-			$('#'+id_fila[i]).remove();
-		}
-		
-	}
-
-	
-	
-
-
-</script>
 </head>
 <body>
-<header class="header">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="logo">
-                    <a class href="index.html">
-                        <img class="img-responsive" src="img/logo-unah-blanco.png" alt="Universidad Nacional Autonoma de Honduras">
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-            </div>
-        </div>
-    </header>
+    <?php
+        include("header.php");
+    ?>
 
      <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
@@ -97,7 +50,7 @@
                         <a class="nav-link" href="estudiante.php">Información<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="matricula.php">Matricula</a>
+                        <a class="nav-link" href="#">Matricula</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="matricula-laboratorios.php">Matricula de laboratorios</a>
@@ -156,7 +109,7 @@
 
                                                  </section><br>
                             <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        <!--AQUI PUTO-->    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="modal-active" onclick="cargarClases(this.id)">
                                 Agregar Asignatura
                             </button>
                             
@@ -180,7 +133,7 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr style="border-top-color: solid white; border-bottom:solid white">
-                                                        <th scope="row"></th>
+                                                        <th scope="row">1</th>
                                                         <td>Mark</td>
                                                         <td>Otto</td>
                                                     
@@ -201,7 +154,7 @@
                                     </div>
                                     </div>
                                     <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">Agregar</button>
+                                    <button type="button" class="btn btn-primary" id="agregar">Agregar</button>
                                     </div>
                                 </div>
                                 </div>
@@ -445,5 +398,6 @@
 
                   
                 </section>
+                <script src="js/modal-matricula.js"></script>
 </body>
 </html>
