@@ -52,11 +52,11 @@
                     </div>
                     </div>
                   </nav>
-        <div id="fondo">
+        <div id="fondo" style="background-image: url(img/estudiante.jpeg); background-size: cover; ">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="container" id="login">
-                        <h6>Para acceder a los servicios estudiantiles debes autenticarte</h6>
+                        <h6 style="color: rgb(1, 49, 94)">Para acceder a los servicios estudiantiles debes autenticarte</h6>
                         <div class="card card-container">
                             <img id="profile-img" class="profile-img-card" src="https://image.flaticon.com/icons/png/512/194/194931.png">
                             <p id="profile-name" class="profile-name-card"></p>
