@@ -6,11 +6,9 @@
 
                 $registros[] = json_decode($linea,true);
             }
-            //Funcion de utileria para imprimir un arrreglo en formato html
-            //var_dump($registros);
             fclose($archivo);
-            //Convierte el arreglo en una cadena en formato json
             echo json_encode($registros);
+            
         break;
     }
     

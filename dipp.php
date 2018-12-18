@@ -1,5 +1,5 @@
 <?php
-    include("validar-sesion.php");
+    include("validar-sesion-admin.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -80,22 +80,6 @@
                         <input class="form-control" type="password" id="password" placeholder="Ingrese una contraseña" required autofocus><br>
                         <input class="form-control" type="text" id="urlImagen" placeholder="Ingrese la url de la foto de perfil" required autofocus><br>
                         <button class="btn btn-lg btn-primary btn-block btn-signin" type="button" id="registra">Registrar</button>
-                        
-                        
-    </div>
-
-    <!--<hr>
-    <h2 style="text-align: center">Bienvenido
-        <?php echo $_SESSION["nombreCompleto"]; ?>
-    </h2>
-    <hr>
-    <br>
-    <div class="container">
-        <div style="width:100%; height:100%; background-color:yellow;">
-            <div>
-            </div>
-        </div>
-    </div>-->
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
