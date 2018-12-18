@@ -51,6 +51,58 @@ $("#slc-departamentos").change(function(){
         dataType: "json",
         success:function(respuesta){
             console.log(respuesta);
+            for (var i = 0; i < respuesta.length; i++) {
+                $("#slc-clases").append(`<option value="${respuesta[i]}">${respuesta[i]}</option>`);
+             }
+        },
+        error: function (error) {
+            console.log(error);
         }
     })
 })
+$("#slc-clases").change(function(){
+    console.log("usuario seleccionado: " + $("#slc-clases").val());
+    $.ajax({
+        url:"ajax/matricula.php?opcion=3"+"&"
+        +"departamento="+$("#slc-clases").val(),
+        method: "GET",
+        dataType: "json",
+        success:function(respuesta){
+            console.log(respuesta);
+            for (var i = 0; i < respuesta.length; i++) {
+                $("#slc-secciones").append(`<option value="${respuesta[i].horaI} - ${respuesta[i].horaF}">${respuesta[i].horaI} - ${respuesta[i].horaF}</option>`);
+             }
+        },
+        error: function (error) {
+            console.log(error);
+        }
+    })
+})
+function matricular(id_modal) {
+    var parametros="clase="+$("#slc-clases").val()+"&"
+    +"seccion="+$("#slc-secciones").val();
+    $.ajax({
+        url: "ajax/matricula.php?opcion=4",
+        method: "POST",
+        dataType: "json",
+        data:parametros,
+        success: function (respuesta) {
+            console.log(respuesta);
+            $("#matriculadas").append(`
+                <tr>
+                <td>${respuesta.clase}</td>
+                <td>${respuesta.seccion}</td>
+                <td>${respuesta.UV}</td>
+                <td>${respuesta.edificio}</td>
+                <td>${respuesta.periodo}</td>
+                <td>${respuesta.anio}</td>
+            </tr>
+            `)
+        },
+        error: function (error) {
+            console.log(error);
+        }
+    });
+
+}
+

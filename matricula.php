@@ -28,7 +28,7 @@
 	}
 	.seleccionada{
 		background-color: #0585C0;
-		color: white;
+        color: white;
 	}
 </style>
 
@@ -116,7 +116,7 @@
 
                             </section><br>
                             <!-- Button trigger modal -->
-                            <!--AQUI PUTO--> <button type="button" class="btn btn-primary" data-toggle="modal"
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#exampleModalCenter" id="modal-active" onclick="cargarClases(this.id)">
                                 Agregar Asignatura
                             </button>
@@ -133,44 +133,17 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <select class="form-control" id="slc-departamentos" required autofocus
-                                                style="width:300px; height:100%;">
+                                            <select id="slc-departamentos" required autofocus
+                                                style="width:300px; height:100%;" size="10">
                                             </select>
-                                            <select class="form-control" id="slc-clases" required autofocus style="width:300px; height:100%;">
+                                            <select id="slc-clases" required autofocus style="width:300px; height:100%;" size="10">
                                             </select>
-                                            <select class="form-control" id="slc-secciones" required autofocus style="width:300px; height:100%;">
+                                            <select id="slc-secciones" required autofocus style="width:300px; height:100%;" size="10">
                                             </select>
-                                            <!--<div class="table-responsive">
-                                            <table class="table table-bordered">
-                                                    <thead style="background-color:#007bff; color: white">
-                                                    <tr>
-                                                        <th scope="col" colspan="3"></th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr style="border-top-color: solid white; border-bottom:solid white">
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                    
-                                                    </tr>
-                                                    <tr style="border-top: solid white; border-bottom:solid white">
-                                                        <th scope="row">2</th>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                    
-                                                    </tr>
-                                                    <tr style="border-top-color: solid white">
-                                                        <th scope="row">3</th>
-                                                        <td >Larry the Bird</td>
-                                                        <td>Thornton</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                    </div>-->
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" id="agregar">Agregar</button>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#exampleModalCenter" id="agregar" onclick="matricular(this.id)">Agregar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -185,44 +158,18 @@
                             <table class="table table-bordered">
                                 <thead style="background-color: #007bff; color: white">
                                     <tr>
-                                        <th scope="col">Cod.</th>
-                                        <th scope="col">Asigantura</th>
+                                    <th scope="col">Asigantura</th>
                                         <th scope="col">Seccion</th>
-                                        <th scope="col">HI</th>
-                                        <th scope="col">HF</th>
-                                        <th scope="col">Dias</th>
-                                        <th scope="col">Edificio</th>
-                                        <th scope="col">Aula</th>
                                         <th scope="col">UV</th>
+                                        <th scope="col">Edificio</th>
                                         <th scope="col">Periodo</th>
+                                        <th scope="col">Año</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="matriculadas">
                                     <tr>
-                                        <th scope="row">MM-110</th>
-                                        <td>Matemática I</td>
-                                        <td>0900</td>
-                                        <td>0800</td>
-                                        <td>0900</td>
-                                        <td>Lu-Vi</td>
-                                        <td>F1</td>
-                                        <td>302</td>
-                                        <td>5</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">MM-111</th>
-                                        <td>Geometria y Trigonometría</td>
-                                        <td>1001</td>
-                                        <td>1000</td>
-                                        <td>1100</td>
-                                        <td>Lu-Vi</td>
-                                        <td>F1</td>
-                                        <td>305</td>
-                                        <td>5</td>
-                                        <td>3</td>
-                                    </tr>
 
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -273,32 +220,6 @@
                                         <td>5</td>
                                         <td>3</td>
                                     </tr>
-                                    <tr class="selected" id="fila2" onclick="seleccionar(this.id)">
-                                        <th scope="row">MM-111</th>
-                                        <td>Geometria y Trigonometría</td>
-                                        <td>1001</td>
-                                        <td>1000</td>
-                                        <td>1100</td>
-                                        <td>Lu-Vi</td>
-                                        <td>F1</td>
-                                        <td>305</td>
-                                        <td>5</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr class="selected" id="fila3" onclick="seleccionar(this.id)">
-                                        <th scope="row">MM-111</th>
-                                        <td>Geometria y Trigonometría</td>
-                                        <td>1001</td>
-                                        <td>1000</td>
-                                        <td>1100</td>
-                                        <td>Lu-Vi</td>
-                                        <td>F1</td>
-                                        <td>305</td>
-                                        <td>5</td>
-                                        <td>3</td>
-                                    </tr>
-
-
                                 </tbody>
                             </table>
                         </div>
@@ -348,7 +269,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="forma003" role="tabpanel" aria-labelledby="forma-003">
+                    <!--<div class="tab-pane fade" id="forma003" role="tabpanel" aria-labelledby="forma-003">
                         <div class="row">
                             <div class="col-md-9">
                                 NOMBRE: <br>
@@ -412,7 +333,7 @@
 
 
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
 
