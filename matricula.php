@@ -3,6 +3,7 @@
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-   
+    <script src="css/fontawesome/js/all.min.js"></script>
+
     <style>
         .modal-dialog{max-width: 1000px !important;}
 	
@@ -26,18 +28,19 @@
 	}
 	.seleccionada{
 		background-color: #0585C0;
-		color: white;
+        color: white;
 	}
 </style>
 
 
 </head>
+
 <body>
     <?php
         include("header.php");
     ?>
 
-     <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +56,7 @@
                         <a class="nav-link" href="#">Matricula</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="historial.php">Historial Academico</a>
+                        <a class="nav-link" href="matricula-laboratorios.php">Matricula de laboratorios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="evaluacion-docente.php">Evaluacion al docente</a>
@@ -113,112 +116,70 @@
 
                             </section><br>
                             <!-- Button trigger modal -->
-        <!--AQUI PUTO-->    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="modal-active" onclick="cargarClases(this.id)">
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter" id="modal-active" onclick="cargarClases(this.id)">
                                 Agregar Asignatura
                             </button>
-                            
+
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModalCenter"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document" >
-                                <div class="modal-content" >
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" >Agrega tu Asignatura</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Agrega tu Asignatura</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <select id="slc-departamentos" required autofocus
+                                                style="width:300px; height:100%;" size="10">
+                                            </select>
+                                            <select id="slc-clases" required autofocus style="width:300px; height:100%;" size="10">
+                                            </select>
+                                            <select id="slc-secciones" required autofocus style="width:300px; height:100%;" size="10">
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#exampleModalCenter" id="agregar" onclick="matricular(this.id)">Agregar</button>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                    <div class="table-responsive">
-                                            <table class="table table-bordered">
-                                                    <thead style="background-color:#007bff; color: white">
-                                                    <tr>
-                                                        <th scope="col" colspan="3"></th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr style="border-top-color: solid white; border-bottom:solid white">
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                    
-                                                    </tr>
-                                                    <tr style="border-top: solid white; border-bottom:solid white">
-                                                        <th scope="row">2</th>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                    
-                                                    </tr>
-                                                    <tr style="border-top-color: solid white">
-                                                        <th scope="row">3</th>
-                                                        <td >Larry the Bird</td>
-                                                        <td>Thornton</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                    </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" id="agregar">Agregar</button>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
-                            
-                            </div>
-                            <br><hr>
-                            <div style="background-color: #007bff; color: white; text-align: center">Asignaturas Matriculadas</div><br>
-                            <div class="table-responsive-lg">
-                            <table class="table table-bordered">
-                                    <thead style="background-color: #007bff; color: white">
-                                    <tr>
-                                        <th scope="col">Cod.</th>
-                                        <th scope="col">Asigantura</th>
-                                        <th scope="col">Seccion</th>
-                                        <th scope="col">HI</th>
-                                        <th scope="col">HF</th>
-                                        <th scope="col">Dias</th>
-                                        <th scope="col">Edificio</th>
-                                        <th scope="col">Aula</th>
-                                        <th scope="col">UV</th>
-                                        <th scope="col">Periodo</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <th scope="row">MM-110</th>
-                                        <td>Matemática I</td>
-                                        <td>0900</td>
-                                        <td>0800</td>
-                                        <td>0900</td>
-                                        <td>Lu-Vi</td>
-                                        <td>F1</td>
-                                        <td>302</td>
-                                        <td>5</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                            <th scope="row">MM-111</th>
-                                            <td>Geometria y Trigonometría</td>
-                                            <td>1001</td>
-                                            <td>1000</td>
-                                            <td>1100</td>
-                                            <td>Lu-Vi</td>
-                                            <td>F1</td>
-                                            <td>305</td>
-                                            <td>5</td>
-                                            <td>3</td>
-                                        </tr>
-                                    
-                                    </tbody>
-                                </table>
-                                </div>
 
                         </div>
-                        <div class="tab-pane fade" id="cancelarClase" role="tabpanel" aria-labelledby="cancelar-Clase">
+                        <br>
+                        <hr>
+                        <div style="background-color: #007bff; color: white; text-align: center">Asignaturas
+                            Matriculadas</div><br>
+                        <div class="table-responsive-lg">
+                            <table class="table table-bordered">
+                                <thead style="background-color: #007bff; color: white">
+                                    <tr>
+                                    <th scope="col">Asigantura</th>
+                                        <th scope="col">Seccion</th>
+                                        <th scope="col">UV</th>
+                                        <th scope="col">Edificio</th>
+                                        <th scope="col">Periodo</th>
+                                        <th scope="col">Año</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="matriculadas">
+                                    <tr>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="cancelarClase" role="tabpanel" aria-labelledby="cancelar-Clase">
                         <div style="background-color: #007bff; color: white; text-align: center">Cancela tu clase</div><br>
                         <div class="table-responsive-lg">
                             <table class="table table-bordered">
-                                    <thead style="background-color: #007bff; color: white">
+                                <thead style="background-color: #007bff; color: white">
                                     <tr>
                                         <th scope="col">Cod.</th>
                                         <th scope="col">Asigantura</th>
@@ -231,8 +192,8 @@
                                         <th scope="col">UV</th>
                                         <th scope="col">Periodo</th>
                                     </tr>
-                                    </thead>
-                                    <tbody>
+                                </thead>
+                                <tbody>
                                     <tr class="selected" id="fila" onclick="seleccionar(this.id)">
                                         <th scope="row">MM-110</th>
                                         <td>Matemática I</td>
@@ -245,7 +206,6 @@
                                         <td>5</td>
                                         <td>3</td>
                                     </tr>
-                                
 
 
                                     <tr class="selected" id="fila1" onclick="seleccionar(this.id)">
@@ -263,11 +223,15 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="tab-pane fade" id="claseEnEspera" role="tabpanel" aria-labelledby="clase-En-Espera">
+                        <button id="bt_del" class="btn btn-default">Eliminar</button>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="claseEnEspera" role="tabpanel" aria-labelledby="clase-En-Espera">
                         <div style="background-color: #007bff; color: white; text-align: center">Clases en Espera</div><br>
-                            <div class="table-responsive-lg">
+                        <div class="table-responsive-lg">
                             <table class="table table-bordered">
-                                    <thead style="background-color: #007bff; color: white">
+                                <thead style="background-color: #007bff; color: white">
                                     <tr>
                                         <th scope="col">Cod.</th>
                                         <th scope="col">Asigantura</th>
@@ -278,8 +242,8 @@
                                         <th scope="col">Aula</th>
                                         <th scope="col">UV</th>
                                     </tr>
-                                    </thead>
-                                    <tbody>
+                                </thead>
+                                <tbody>
                                     <tr>
                                         <th scope="row">MM-110</th>
                                         <td>Matemática I</td>
@@ -291,19 +255,18 @@
                                         <td>5</td>
                                     </tr>
                                     <tr>
-                                            <th scope="row">MM-111</th>
-                                            <td>Geometria y Trigonometría</td>
-                                            <td>1001</td>
-                                            <td>1000</td>
-                                            <td>1100</td>
-                                            <td>F1</td>
-                                            <td>305</td>
-                                            <td>5</td>
-                                        </tr>
-                                    
-                                    </tbody>
-                                </table>
-                                </div>
+                                        <th scope="row">MM-111</th>
+                                        <td>Geometria y Trigonometría</td>
+                                        <td>1001</td>
+                                        <td>1000</td>
+                                        <td>1100</td>
+                                        <td>F1</td>
+                                        <td>305</td>
+                                        <td>5</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <!--<div class="tab-pane fade" id="forma003" role="tabpanel" aria-labelledby="forma-003">
@@ -374,8 +337,9 @@
             </div>
         </div>
 
-                  
-                </section>
-                <script src="js/modal-matricula.js"></script>
+
+    </section>
+    <script src="js/modal-matricula.js"></script>
 </body>
+
 </html>
