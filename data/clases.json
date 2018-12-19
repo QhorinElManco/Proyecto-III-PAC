@@ -1,3 +1,4 @@
-{"carrera":"Ingeniería en Sistemas","departamento":"Lenguas Extranjeras","clases":{"0":"IN-101 - Ingles I","1":"IN-102 - Ingles II","2":"IN-103 - Ingles III"}}
-{"carrera":"Ingeniería en Sistemas","departamento":"Matemática Pura","clases":{"0":"MM-201 - Calculo I","1":"MM-211 - Vectores y Matrices","2":"MM-314 - Programación I"}}
+{"carrera":"Ingeniería en Sistemas","departamento":"Lenguas Extranjeras","clases":{"0":"IN-101 - Ingles I","1":"IN-102 - Ingles II","2":"IN-103 - Ingles III","3":"FR-100-Frances I","4":"FR-200- Frances II"}}
+{"carrera":"Ingeniería en Sistemas","departamento":"Matemática Pura","clases":{"0":"MM-201 - Calculo I","1":"MM-202 Calculo II","2":"MM-314 - Programación I","3":"MM-211 - Vectores y Matrices"}}
 {"carrera":"Ingeniería en Sistemas","departamento":"Física","clases":{"0":"FS-100 - Física I","1":"FS-200 - Física II"}}
+{"carrera":"Ingeniería en Sistemas","departamento":"Ingenieria en Sistemas","clases":{"0":"IS-110 intro.-ing. en sistemas","1":"IS-210-Programacion II","2":"IS-310-Algoritmos y Estructura","3":"IS-311-Curcuitos Elecctricos","4":"IS-314-Electronica","5":"IS-412-Base de Datos I"}}
