@@ -77,6 +77,7 @@
     <hr>
     <br>
     <div class="container" id="inf-tabla" style="height:500px;">
+    
     </div>
 
     <script src="js/cargar-estudiante.js"></script>

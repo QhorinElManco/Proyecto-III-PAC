@@ -15,6 +15,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.4.2/js/all.js" integrity="sha384-wp96dIgDl5BLlOXb4VMinXPNiB32VYBSoXOoiARzSTXY+tsK8yDTYfvdTyqzdGGN"
         crossorigin="anonymous"></script>
+        
 </head>
 <body>
 <?php
@@ -74,43 +75,36 @@
             <hr >
             <h3 style="text-align: center">Califaciones del Periodo</h3>
             <hr>
-            <div style="border:4px solid teal">
-            Datos Generales: <br>
-            Nombre: <br>
-            Cuenta: <br>
-            Periodo:    <br>
-            Año:    <br>
-        </div>
         </div>
         <br>
-        <div>
-                <table class="table">
+        <div class="table-responsive">
+                <table class="table table-hover">
                         <thead class="thead-light">
                           <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">Clase</th>
+                            <th scope="col">Sección</th>
+                            <th scope="col">Docente</th>
+                            <th scope="col">Nota</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="thead-light">
                           <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <th scope="row">POO</th>
+                            <td>1500</td>
+                            <td>Erick Marín</td>
+                            <td>100</td>
                           </tr>
                           <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
+                            <th scope="row">Estadística</th>
+                            <td>1400</td>
+                            <td>Wilfredo Murillo</td>
+                            <td>85</td>
                           </tr>
                           <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
+                            <th scope="row">Física I</th>
+                            <td>1800</td>
+                            <td>Carlos Sosa</td>
+                            <td>80</td>
                           </tr>
                         </tbody>
                       </table>

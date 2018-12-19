@@ -198,9 +198,9 @@
         <hr style="background-color: gray"><br>
         <div class="col-4 col-xl-4 col-sm-1">
           <ul id="icono-ul">
-            <li id="icono-li"><a id="link-a" href="#"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-            <li id="icono-li"><a id="link-a" href="#"><i class="fab fa-twitter "></i></a></li>
-            <li id="icono-li"><a id="link-a" href="#"><i class="fab fa-instagram"></i></a></li>
+            <li id="icono-li"><a id="link-a" href="https://www.facebook.com/unahoficial/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+            <li id="icono-li"><a id="link-a" href="https://twitter.com/unahoficial?lang=es"><i class="fab fa-twitter "></i></a></li>
+            <li id="icono-li"><a id="link-a" href="https://www.instagram.com/unahoficial/?hl=es-la"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
       </div>
