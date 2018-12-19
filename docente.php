@@ -48,7 +48,7 @@
         </select>
     </div><br>
     
-    <div>
+    <div style="min-height:600px;">
         <div class="table-responsive">
             <table class="table table-hover table-striped">
                 <thead>
