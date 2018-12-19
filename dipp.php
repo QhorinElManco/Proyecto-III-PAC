@@ -37,10 +37,10 @@
                         <a class="nav-link" href="#">Registro de estudiantes<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registro-doceente.php">Registro de docentes</a>
+                        <a class="nav-link" href="#">Registro de docentes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registro-administrativo.php">Registro de personal administrativo</a>
+                        <a class="nav-link" href="#">Registro de personal administrativo</a>
                     </li>
                 </ul>
             </div>

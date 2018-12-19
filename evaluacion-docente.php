@@ -33,16 +33,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Información<span class="sr-only"></span></a>
+                        <a class="nav-link" href="estudiante.php">Información<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="matricula.php">Matricula</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="matricula-laboratorios.php">Matricula de laboratorios</a>
+                        <a class="nav-link" href="historial.php">Historial Academico</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="evaluacion-docente.php">Evaluacion al docente</a>
+                        <a class="nav-link" href="#">Evaluacion al docente</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="calificaciones-periodo.php">Calificaciones del periodo</a>

@@ -20,7 +20,7 @@
 <?php
     include("header.php")
 ?>
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,21 +29,20 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link" href="estudiante.php">Información<span class="sr-only"></span></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Matricula</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.php">Matricula</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="matricula-laboratorios.php">Matricula de laboratorios</a>
+                        <a class="nav-link" href="historial.php">Historial Academico</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="evaluacion-docente.php">Evaluacion al docente</a>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="calificaciones-periodo.php">Calificaciones del periodo</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Calificaciones del periodo</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"

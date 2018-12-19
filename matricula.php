@@ -50,10 +50,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Información<span class="sr-only"></span></a>
+                        <a class="nav-link" href="estudiante.php">Información<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="matricula.php">Matricula</a>
+                        <a class="nav-link" href="#">Matricula</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="historial.php">Historial Academico</a>
