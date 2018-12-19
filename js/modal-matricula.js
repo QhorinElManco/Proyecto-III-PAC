@@ -3,28 +3,6 @@ $(document).ready(function () {
     $('#bt_del').click(function () {
         eliminar(id_fila_selected);
     });
-    //Estudiante: <br>
-    //cuenta: <br>
-   // Carrera: <br>
-    //UV Disponible: <br>
-    //Periodo: <br>
-    $.ajax({
-		url:"ajax/cargar-estudiante.php",
-		method:"GET",
-		dataType:"json",
-		success:function(respuesta){
-			console.log(respuesta);
-            $("#carga").append(`Estudiante:     ${respuesta.nombreCompleto}<br>
-                                cuenta:     ${respuesta.numeroCuenta}<br>
-                                Carrera:    ${respuesta.carrera}<br>
-                                UV Disponible:  25<br>
-                                Periodo: 2018<br>`);
-		},
-		error:function(error){
-			console.log(error);
-		}
-    });
-    
 });
 var cont = 0;
 var id_fila_selected = [];
@@ -48,9 +26,6 @@ function eliminar(id_fila) {
 
 }
 function cargarClases(id_modal) {
-    $("slc-departamentos").remove();
-    $("slc-clases").empty();
-    $("slc-secciones").empty();
     $.ajax({
         url: "ajax/matricula.php?opcion=1",
         method: "GET",

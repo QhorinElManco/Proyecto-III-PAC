@@ -78,28 +78,6 @@
     <br>
     <div class="container" id="inf-tabla">
     </div>
-    <div class="container">
-    <div class="table-responsive">
-        <table class="table table-bordered">
-            <thead style="background-color: #007bff; color: white">
-                <tr>
-                <th scope="col">Asigantura</th>
-                    <th scope="col">Seccion</th>
-                    <th scope="col">UV</th>
-                    <th scope="col">Edificio</th>
-                    <th scope="col">Periodo</th>
-                    <th scope="col">Año</th>
-                </tr>
-            </thead>
-            <tbody id="clases-matriculadas">
-                <tr>
-
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    </div>
-
 
     <script src="js/cargar-estudiante.js"></script>
 </body>
