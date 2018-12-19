@@ -88,7 +88,7 @@
 
     <section style="box-shadow: none;">
         <div class="row" style="margin:auto">
-            <div class="col-2">
+            <div class="col-3">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link active" id="matricular-Clase" data-toggle="pill" href="#matricularClase" role="tab"
                         aria-controls="matricularClase" aria-selected="true">Matricula</a>
@@ -104,7 +104,13 @@
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="matricularClase" role="tabpanel" aria-labelledby="matricular-Clase">
                         <div>
-                            <section style="padding: 10px; margin:auto; box-shadow:none; border: solid lightgray" id="carga">
+                            <section style="padding: 10px; margin:auto; box-shadow:none; border: solid lightgray">
+                                Estudiante: <br>
+                                cuenta: <br>
+                                Carrera: <br>
+                                UV Disponible: <br>
+                                Periodo: <br>
+
                             </section><br>
                             <!-- Button trigger modal -->
         <!--AQUI PUTO-->    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="modal-active" onclick="cargarClases(this.id)">
@@ -214,12 +220,16 @@
                             <table class="table table-bordered">
                                     <thead style="background-color: #007bff; color: white">
                                     <tr>
+                                        <th scope="col">Cod.</th>
                                         <th scope="col">Asigantura</th>
                                         <th scope="col">Seccion</th>
-                                        <th scope="col">UV</th>
+                                        <th scope="col">HI</th>
+                                        <th scope="col">HF</th>
+                                        <th scope="col">Dias</th>
                                         <th scope="col">Edificio</th>
+                                        <th scope="col">Aula</th>
+                                        <th scope="col">UV</th>
                                         <th scope="col">Periodo</th>
-                                        <th scope="col">Año</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -230,9 +240,26 @@
                                         <td>0800</td>
                                         <td>0900</td>
                                         <td>Lu-Vi</td>
+                                        <td>F1</td>
+                                        <td>302</td>
+                                        <td>5</td>
+                                        <td>3</td>
                                     </tr>
                                 
 
+
+                                    <tr class="selected" id="fila1" onclick="seleccionar(this.id)">
+                                        <th scope="row">MM-111</th>
+                                        <td>Geometria y Trigonometría</td>
+                                        <td>1001</td>
+                                        <td>1000</td>
+                                        <td>1100</td>
+                                        <td>Lu-Vi</td>
+                                        <td>F1</td>
+                                        <td>305</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -279,6 +306,71 @@
                                 </div>
                         </div>
                     </div>
+                    <!--<div class="tab-pane fade" id="forma003" role="tabpanel" aria-labelledby="forma-003">
+                        <div class="row">
+                            <div class="col-md-9">
+                                NOMBRE: <br>
+                                CUENTA: <br>
+                                CARRERA: <br>
+                                PERIODO: <br>
+                                AÑO: <br>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="img/usuario.png" class="rounded co-md-6" width="171px" height="150px" />
+                            </div>
+                        </div>
+                        <hr>
+                        <div style="background-color: #007bff; color: white; text-align: center">Asignaturas
+                            Matriculadas</div><br>
+                        <div class="table-responsive-lg">
+                            <table class="table table-bordered">
+                                <thead style="background-color: #007bff; color: white">
+                                    <tr>
+                                        <th scope="col">Cod.</th>
+                                        <th scope="col">Asigantura</th>
+                                        <th scope="col">Seccion</th>
+                                        <th scope="col">HI</th>
+                                        <th scope="col">HF</th>
+                                        <th scope="col">Dias</th>
+                                        <th scope="col">Edificio</th>
+                                        <th scope="col">Aula</th>
+                                        <th scope="col">UV</th>
+                                        <th scope="col">Periodo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">MM-110</th>
+                                        <td>Matemática I</td>
+                                        <td>0900</td>
+                                        <td>0800</td>
+                                        <td>0900</td>
+                                        <td>Lu-Vi</td>
+                                        <td>F1</td>
+                                        <td>302</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MM-111</th>
+                                        <td>Geometria y Trigonometría</td>
+                                        <td>1001</td>
+                                        <td>1000</td>
+                                        <td>1100</td>
+                                        <td>Lu-Vi</td>
+                                        <td>F1</td>
+                                        <td>305</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>-->
             </div>
         </div>
 
