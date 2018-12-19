@@ -40,7 +40,7 @@
         include("header.php");
     ?>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,14 +49,14 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto" style="margin-left:auto; margin-right:auto;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="estudiante.php">Información<span class="sr-only"></span></a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Información<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Matricula</a>
+                        <a class="nav-link" href="matricula.php">Matricula</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="matricula-laboratorios.php">Matricula de laboratorios</a>
+                        <a class="nav-link" href="historial.php">Historial Academico</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="evaluacion-docente.php">Evaluacion al docente</a>
@@ -91,7 +91,7 @@
 
     <section style="box-shadow: none;">
         <div class="row" style="margin:auto">
-            <div class="col-3">
+            <div class="col-2">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link active" id="matricular-Clase" data-toggle="pill" href="#matricularClase" role="tab"
                         aria-controls="matricularClase" aria-selected="true">Matricula</a>
@@ -99,15 +99,14 @@
                         aria-controls="cancelarClase" aria-selected="false">Cancelar Clase</a>
                     <a class="nav-link" id="Clase-En-Espera" data-toggle="pill" href="#claseEnEspera" role="tab"
                         aria-controls="claseEnEspera" aria-selected="false">Clases en Espera</a>
-                    <a class="nav-link" id="forma-003" data-toggle="pill" href="#forma003" role="tab" aria-controls="forma003"
-                        aria-selected="false">Forma 003</a>
+
                 </div>
             </div>
             <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="matricularClase" role="tabpanel" aria-labelledby="matricular-Clase">
                         <div>
-                            <section style="padding: 10px; margin:auto; box-shadow:none; border: solid lightgray">
+                            <section style="padding: 10px; margin:auto; box-shadow:none; border: solid lightgray" id="carga">
                                 Estudiante: <br>
                                 cuenta: <br>
                                 Carrera: <br>
@@ -269,71 +268,6 @@
                             </table>
                         </div>
                     </div>
-                    <!--<div class="tab-pane fade" id="forma003" role="tabpanel" aria-labelledby="forma-003">
-                        <div class="row">
-                            <div class="col-md-9">
-                                NOMBRE: <br>
-                                CUENTA: <br>
-                                CARRERA: <br>
-                                PERIODO: <br>
-                                AÑO: <br>
-                            </div>
-                            <div class="col-md-3">
-                                <img src="img/usuario.png" class="rounded co-md-6" width="171px" height="150px" />
-                            </div>
-                        </div>
-                        <hr>
-                        <div style="background-color: #007bff; color: white; text-align: center">Asignaturas
-                            Matriculadas</div><br>
-                        <div class="table-responsive-lg">
-                            <table class="table table-bordered">
-                                <thead style="background-color: #007bff; color: white">
-                                    <tr>
-                                        <th scope="col">Cod.</th>
-                                        <th scope="col">Asigantura</th>
-                                        <th scope="col">Seccion</th>
-                                        <th scope="col">HI</th>
-                                        <th scope="col">HF</th>
-                                        <th scope="col">Dias</th>
-                                        <th scope="col">Edificio</th>
-                                        <th scope="col">Aula</th>
-                                        <th scope="col">UV</th>
-                                        <th scope="col">Periodo</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">MM-110</th>
-                                        <td>Matemática I</td>
-                                        <td>0900</td>
-                                        <td>0800</td>
-                                        <td>0900</td>
-                                        <td>Lu-Vi</td>
-                                        <td>F1</td>
-                                        <td>302</td>
-                                        <td>5</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">MM-111</th>
-                                        <td>Geometria y Trigonometría</td>
-                                        <td>1001</td>
-                                        <td>1000</td>
-                                        <td>1100</td>
-                                        <td>Lu-Vi</td>
-                                        <td>F1</td>
-                                        <td>305</td>
-                                        <td>5</td>
-                                        <td>3</td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-
-
-                    </div>
-                </div>-->
             </div>
         </div>
 

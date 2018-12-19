@@ -1,4 +1,21 @@
 $(document).ready(function () {
+    $.ajax({
+        url: "ajax/cargar-estudiante.php",
+        method: "GET",
+        dataType: "json",
+        success: function (respuesta) {
+            console.log(respuesta);
+            $("#carga").html(
+                `   Estudiante: ${respuesta.nombreCompleto}<br>
+                    cuenta: ${respuesta.numeroCuenta}<br>
+                    Carrera: ${respuesta.carrera}<br>
+                    UV Disponible: 25<br>
+                    Periodo:  III Período<br>`);
+        },
+        error: function (error) {
+            console.log(error);
+        }
+    });
 
     $('#bt_del').click(function () {
         eliminar(id_fila_selected);
@@ -26,6 +43,9 @@ function eliminar(id_fila) {
 
 }
 function cargarClases(id_modal) {
+    $("slc-departamentos").remove();
+    $("slc-clases").remove();
+    $("slc-secciones").remove();
     $.ajax({
         url: "ajax/matricula.php?opcion=1",
         method: "GET",

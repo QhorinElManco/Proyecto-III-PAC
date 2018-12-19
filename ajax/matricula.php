@@ -17,7 +17,7 @@
             $archivo = fopen("../data/clases.json","r");
             while(($linea=fgets($archivo))){
                 $registro = json_decode($linea,true);
-                if($_SESSION["carrera"]=$registro["carrera"] && $_GET["departamento"]==$registro["departamento"]){
+                if($_SESSION["carrera"]==$registro["carrera"] && $_GET["departamento"]==$registro["departamento"]){
                         $clases=$registro["clases"];
                         echo json_encode($clases);
                         exit;
