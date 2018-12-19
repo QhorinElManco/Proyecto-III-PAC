@@ -66,7 +66,7 @@ var densityData = {
 var barChart = new Chart(densityCanvas, {
   type: 'bar',
   data: {
-    labels: ["Matematica 1", "Geometria y Trigonometria", "Ecuaciones Diferenciales","calculo 2"],
+    labels: ["Matemaatica 1", "Geometria y Trigonometria", "Ecuaciones Diferenciales","calculo 2"],
     datasets: [densityData]
   }
 });
@@ -229,7 +229,7 @@ section .section-title {
                                      </div>
                                 </div>
                                 <div class="tab-pane fade" id="reprobadas-materias" role="tabpanel" aria-labelledby="nav-reprobadas-tab">
-                                 <canvas id="densityChart" width="auto" height="auto"></canvas>
+                                 <canvas id="densityChart" width="600" height="400"></canvas>
                                 </div>
                                 
                             </div>
