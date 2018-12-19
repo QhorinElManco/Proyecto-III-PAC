@@ -45,5 +45,27 @@ $(document).ready(function () {
             console.log(error);
         }
     });
+        $.ajax({
+        url: "ajax/matricula.php?opcion=4",
+        method: "POST",
+        dataType: "json",
+        data:parametros,
+        success: function (respuesta) {
+            console.log(respuesta);
+            $("#clases matriculas").append(`
+                <tr>
+                <td>${respuesta.clase}</td>
+                <td>${respuesta.seccion}</td>
+                <td>${respuesta.UV}</td>
+                <td>${respuesta.edificio}</td>
+                <td>${respuesta.periodo}</td>
+                <td>${respuesta.anio}</td>
+            </tr>
+            `)
+        },
+        error: function (error) {
+            console.log(error);
+        }
+    });
 
 });

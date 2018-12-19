@@ -34,7 +34,7 @@
                 $registro["mensaje"] = "Acceso autorizado";
                 $_SESSION["cuenta"] = $_POST["cuenta"];
                 $_SESSION["tipoUsuario"] = $registro["tipoUsuario"];
-                $_SESSION["nombre"] = $registro["nombreCompleto"];
+                $_SESSION["nombre"] = $registro["nombre"];
 
                 echo json_encode($registro);
                 exit;
