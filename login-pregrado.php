@@ -85,4 +85,8 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/controlador.js"></script>
 </body>
+<?php
+    include("footer.php");
+?>
+
 </html>

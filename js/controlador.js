@@ -25,12 +25,6 @@ $("#btn-login").click(function () {
                     window.location.href = "estudiante.php";//redireccionar
                 else if (respuesta.tipoUsuario == "docente")
                     window.location.href = "docente.php";//redireccionar
-                else if (respuesta.tipoUsuario == "docente")
-                    window.location.href = "docente.php";//redireccionar
-                else if (respuesta.tipoUsuario == "docente")
-                    window.location.href = "docente.php";//redireccionar
-                else if (respuesta.tipoUsuario == "docente")
-                    window.location.href = "docente.php";//redireccionar
             } else
                 $("#alert").html('<span style="color:red;">Cuenta y/o contraseña incorrecta</span><br><span style="color:red;">Asegurese de seleccionar su tipo de usuario</span>');
         },

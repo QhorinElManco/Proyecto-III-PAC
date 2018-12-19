@@ -80,7 +80,8 @@ var barChart = new Chart(densityCanvas, {
 section {
     padding: 60px 0;
     margin:20px 20px;
-    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.8);
+    min-height: 600px;
 }
 
 section .section-title {
@@ -240,4 +241,7 @@ section .section-title {
             </section>
    
 </body>
+<?php
+    include("footer.php");
+?>
 </html>

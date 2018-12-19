@@ -69,7 +69,7 @@
         </div>
     </nav>
 
-    <section>
+    <div class="container" style="min-height:600px;">
         <div >
             <hr >
             <h3 style="text-align: center">Califaciones del Periodo</h3>
@@ -82,6 +82,7 @@
             Año:    <br>
         </div>
         </div>
+        <br>
         <div>
                 <table class="table">
                         <thead class="thead-light">
@@ -115,7 +116,10 @@
                       </table>
                       
         </div>
-    </section>
-    
+</div>
+<?php
+    include("footer.php");
+?>
+
 </body>
 </html>

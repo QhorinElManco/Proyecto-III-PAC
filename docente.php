@@ -1,5 +1,5 @@
 <?php
-  include("validar-sesion.php");  
+  include("validar-sesion-admin.php");  
 ?>
 
 <!DOCTYPE html>
@@ -27,25 +27,15 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="logo">
-                    <a class href="index.html">
-                        <img class="img-responsive" src="img/logo-unah-blanco.png" alt="Universidad Nacional Autonoma de Honduras">
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-            </div>
-        </div>
-    </header>
+<?php
+    include("header.php")
+?>
 
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="#"></a>
         <div style="margin-left:auto;"><a class="navbar-brand" href="cerrar-sesion.php"><span>Cerrar Sesión <i class="fas fa-sign-out-alt"></i></span></a></div>
     </nav> <br>
+    <div class="container">
     <div class="container-fluid">
         <div></div>
         <h2>Listado de estudiantes por asignatura</h2>
@@ -57,6 +47,7 @@
             <option value="3">MM-111</option>
         </select>
     </div><br>
+    
     <div>
         <div class="table-responsive">
             <table class="table table-hover table-striped">
@@ -92,18 +83,18 @@
                     </tr>
                 </tbody>
             </table>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="button" style="width:200px; margin-left:auto;">Registrar</button>
 
         </div>
 
+    </div>
     </div>
 
 
 
 </body>
-<footer class="footer" style="margin-right: auto; margin-left: auto;text-align:center; ">
-    <div style="margin-right: auto; margin-left:auto; margin-top:40px">
-        <a href="https://www.unah.edu.hn/?cat=1477&fcats">Dirección Ejecutiva de Gestión de Tecnología (DEGT)</a>
-    </div>
-</footer>
+<?php
+    include("footer.php");
+?>
 
 </html>

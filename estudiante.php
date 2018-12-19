@@ -76,14 +76,13 @@
     </h2>
     <hr>
     <br>
-    <div class="container" id="inf-tabla">
+    <div class="container" id="inf-tabla" style="height:500px;">
     </div>
 
     <script src="js/cargar-estudiante.js"></script>
 </body>
-<footer class="footer" style="margin-right: auto; margin-left: auto;text-align:center; ">
-    <div style="margin-right: auto; margin-left:auto; margin-top:40px">
-        <a href="https://www.unah.edu.hn/?cat=1477&fcats">Dirección Ejecutiva de Gestión de Tecnología (DEGT)</a>
-    </div>
+<?php
+    include("footer.php");
+?>
 </footer>
 </html>

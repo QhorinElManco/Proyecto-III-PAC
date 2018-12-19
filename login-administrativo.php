@@ -85,5 +85,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controlador-admin.js"></script>
 </body>
+<?php
+    include("footer.php");
+?>
 
 </html>

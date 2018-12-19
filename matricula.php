@@ -88,8 +88,7 @@
             </div>
         </div>
     </nav>
-
-    <section style="box-shadow: none;">
+    <section style="box-shadow: none; height:600px;">
         <div class="row" style="margin:auto">
             <div class="col-2">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -271,9 +270,10 @@
             </div>
         </div>
 
-
     </section>
     <script src="js/modal-matricula.js"></script>
 </body>
-
+<?php
+    include("footer.php");
+?>
 </html>

@@ -55,8 +55,10 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-                    <form>
+    <div class="container" style="min-height:600px;text-align:center;">
+    <br>
+    <br>
+                    <form style="width: 400px; margin-left:auto; margin-right:auto;">
                         <input class="form-control" type="text" id="nombreCompleto" placeholder="Nombre completo" required autofocus><br>
                         <input class="form-control" type="text" id="direccion" placeholder="Dirección completa donde reside" required autofocus><br>
                         <select class="form-control" id="centro" required autofocus>
@@ -78,12 +80,15 @@
                         </select><br>
                         <input class="form-control" type="number" id="numeroCuenta" placeholder="Ingrese numero de cuenta" required autofocus><br>
                         <input class="form-control" type="password" id="password" placeholder="Ingrese una contraseña" required autofocus><br>
-                        <input class="form-control" type="text" id="urlImagen" placeholder="Ingrese la url de la foto de perfil" required autofocus><br>
-                        <button class="btn btn-lg btn-primary btn-block btn-signin" type="button" id="registra">Registrar</button>
+                        <input class="form-control" type="text" id="urlImagen" placeholder="Ingrese la url de la foto de perfil" required autofocus><br><br>
+                        <button class="btn btn-lg btn-primary btn-block btn-signin" type="button" id="registra" style="width:150px; margin:auto;">Registrar</button>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controlador-dipp.js"></script>
 </body>
+<?php
+    include("footer.php");
+?>
 
 </html>
