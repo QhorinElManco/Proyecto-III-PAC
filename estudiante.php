@@ -38,7 +38,7 @@
                         <a class="nav-link" href="matricula.php">Matricula</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="matricula-laboratorios.php">Matricula de laboratorios</a>
+                        <a class="nav-link" href="historial.php">Historial Academico</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="evaluacion-docente.php">Evaluacion al docente</a>
